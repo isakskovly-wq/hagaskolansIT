@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakta Isak – Hagaskolans IT</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">🏫 <span><strong>Hagaskolans IT</strong><small>IT = Isak-Teknik</small></span></a><button class="menu-toggle">☰</button><nav><a href="index.html">Hem</a><a href="hjalp.html">🆘 Hjälp</a><a href="guider.html">📚 Guider</a><a href="drift.html">📢 Drift</a><a class="active nav-cta" href="kontakt.html">📝 Kontakta Isak</a></nav></div></header>
+<main class="container page"><p class="eyebrow">KONTAKTA ISAK</p><h1>Behöver du personlig hjälp?</h1><p class="lead">Kolla gärna guiderna först. Om tekniken fortfarande vägrar samarbeta kan du fylla i formuläret.</p>
+<form id="supportForm" class="form-card">
+<label>Namn<input required name="namn" placeholder="Ditt namn"></label>
+<label>Vad gäller problemet?
+<select name="kategori"><option>Dator / Chromebook</option><option>Projektor / skärm</option><option>Ljud</option><option>Internet / Wi-Fi</option><option>Skrivare</option><option>Meitner</option><option>Skolon / Licenser</option><option>Annat</option></select></label>
+<label>Rum / plats<input name="rum" placeholder="Ex. sal 214"></label>
+<label>Hur brådskande är det?<select name="prio"><option>🟢 Kan vänta</option><option>🟡 Behöver lösas idag</option><option>🔴 Akut – jag kan inte genomföra mitt arbete</option></select></label>
+<label>Beskriv problemet<textarea required name="problem" rows="6" placeholder="Vad händer? Vad har du redan provat?"></textarea></label>
+<label><span>Har du provat att starta om?</span><div class="radio-row"><label><input type="radio" name="omstart" value="Ja"> Ja</label><label><input type="radio" name="omstart" value="Nej"> Nej</label><label><input type="radio" name="omstart" value="Går inte"> Går inte</label></div></label>
+<button class="button" type="submit">📝 Skicka till Isak</button>
+<p class="form-note">V1 är en lokal testversion. Knappen visar hur ett ärende kan registreras; den skickar ännu inget till en riktig mottagare.</p>
+</form>
+<div id="formSuccess" class="callout hidden"></div>
+</main><footer><div class="container">Hagaskolans IT = Isak-Teknik · Version 1.0</div></footer><script src="js/app.js"></script></body></html>
